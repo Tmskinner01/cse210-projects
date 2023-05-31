@@ -1,15 +1,22 @@
 using System;
-using System.Text.RegularExpressions;
 
 class Program
 {
     static void Main(string[] args)
     {
-        string _text = "Hello There!";
-        Console.WriteLine(_text);
-        _text = Regex.Replace(_text, "[a-z]", "_");
-        _text = Regex.Replace(_text, "[A-z]", "_");
-        Console.WriteLine(_text);
+        Assignment assignment1 = new Assignment("James Bennett", "Multiplication");
+        Console.WriteLine(assignment1.GetSummary());
 
+        Console.WriteLine();
+
+        MathAssignment assignment2 = new MathAssignment("Roberto Rodriguez", "Fractions", "Section 7.3", "Problems 8-19");
+        Console.WriteLine(assignment2.GetSummary());
+        Console.WriteLine(assignment2.GetHomeworkList());
+
+        Console.WriteLine();
+
+        WritingAssignment assignment3 = new WritingAssignment("Mary Waters", "European History", "The Causes of World War II");
+        Console.WriteLine(assignment3.GetSummary());
+        Console.WriteLine(assignment3.GetWritingInformation());
     }
 }
