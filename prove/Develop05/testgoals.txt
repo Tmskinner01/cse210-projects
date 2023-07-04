@@ -1,0 +1,3 @@
+250
+Goal:Paint Fellbeast:True
+ChecklistGoal:Paint Watchers of Kharna@11@3:False
